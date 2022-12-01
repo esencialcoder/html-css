@@ -7,24 +7,80 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!--- forms -->
     <h1>Form example</h1>
     <form 
     action="registro-completado.html"
-    method="post">
+    method="post" 
+    novalidate>
     
         <div>
             <label for="mail">Email</label>
-            <input name="correo" id="mail"
-            type="email"placeholder="Add your email">
+            <input 
+            requiered name="email" 
+            id="mail"
+            type="email"
+            placeholder="Add your email">
         <div>
 
         </div>
             <label for="pass">Password</label>
-            <input name="pwd" id="pass" type="password"placeholder="Add your password">
+            <input requiered name="pwd" id="pass" type="password"placeholder="Add your password">
         </div>
+        <button type="button">quiero factura</button>
+        <fieldset>
+            <legend>Fav programming lang </legend>
+            <label for="js">Javascript</label>
+            <input type="radio" id="js" name="favLang" value="javascript">            
+            <label for="python">python</label>
+            <input type="radio" id="python" name="favLang" value="python">
+            <label for="net">.NET</label>
+            <input type="radio" id="net" name="favLang" value="net">
+        </fieldset>
+        <fieldset>
+            <legend>SKILL </legend>
+            <label for="skillJs">Javascript</label>
+            <input type="checkbox" id="skillJs" name="skill" value="javascript">            
+            <label for="skillPython">python</label>
+            <input type="checkbox" id="skillPython" name="skill" value="python">
+            <label for="skillNet">.NET</label>
+            <input type="checkbox" id="skillNet" name="skill" value="net">
+        </fieldset>
+        <fieldset>
+            <legend>Privacy</legend>
+            <div>
+            <input type="checkbox" name="spam" id="spam">
+            <label for="spam">Subscribe to my newsletter</label>
+        </div>
+        <div>
+            <input type="checkbox" name="terms" id="termsAndConditions">
+            <label for="termsAndConditions">Accept terms and contitions</label>
+        </div>
+        </fieldset>
+        <label for="bio">Add your bio</label>
+        <textarea requiered minLength="10" name="bio" id="bio" cols="30" rows="10"></textarea>
+        <br>
+        <select name="ciudad" id="ciudad"></select>
+            <option value="mad">Madrid</option>
+            <option value="bcn">Barcelona</option>
+            <option value="mal">Malaga</option>
+        <select> 
+        <br>
+        <div>
+            <label for="phone">phone</label> 
+            <input 
+            requiered 
+            type="tel" 
+            name="phone" 
+            id="phone" 
+            pattern="[0-9]+">
+        </div>
+        <input type="submit" value="enviar">
+        <button type="submit">Registrar</button>
+
         <input type="submit" value="Enviar">
-        
-        <button>registrar</button>
+        <button type="submit">registrar</button>
     </form>
 </body>
 </html>
