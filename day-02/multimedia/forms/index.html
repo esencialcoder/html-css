@@ -13,12 +13,14 @@
     <form 
     action="registro-completado.html"
     method="post" 
-    novalidate>
+    novalidate
+    >
     
         <div>
             <label for="mail">Email</label>
             <input 
-            requiered name="email" 
+            required
+            name="email" 
             id="mail"
             type="email"
             placeholder="Add your email">
@@ -26,58 +28,56 @@
 
         </div>
             <label for="pass">Password</label>
-            <input requiered name="pwd" id="pass" type="password"placeholder="Add your password">
+            <input required name="pwd" id="pass" type="password"placeholder="Add your password">
         </div>
         <button type="button">quiero factura</button>
+
         <fieldset>
-            <legend>Fav programming lang </legend>
+            <legend>Fav programming lang</legend>
             <label for="js">Javascript</label>
-            <input type="radio" id="js" name="favLang" value="javascript">            
+            <input type="radio" id="js" name="favLang" value="javascript">
             <label for="python">python</label>
-            <input type="radio" id="python" name="favLang" value="python">
+            <input type="radio" id="python" name="favLang" value="python"> 
             <label for="net">.NET</label>
             <input type="radio" id="net" name="favLang" value="net">
-        </fieldset>
-        <fieldset>
-            <legend>SKILL </legend>
+        </fieldset>  
+
+         <fieldset>
+            <legend>SKILL</legend>
             <label for="skillJs">Javascript</label>
-            <input type="checkbox" id="skillJs" name="skill" value="javascript">            
+            <input type="checkbox" id="skillJs" name="skill" value="javascript">
             <label for="skillPython">python</label>
-            <input type="checkbox" id="skillPython" name="skill" value="python">
+            <input type="checkbox" id="skillPython" name="skill" value="python"> 
             <label for="skillNet">.NET</label>
             <input type="checkbox" id="skillNet" name="skill" value="net">
         </fieldset>
+
         <fieldset>
             <legend>Privacy</legend>
             <div>
-            <input type="checkbox" name="spam" id="spam">
-            <label for="spam">Subscribe to my newsletter</label>
-        </div>
-        <div>
-            <input type="checkbox" name="terms" id="termsAndConditions">
-            <label for="termsAndConditions">Accept terms and contitions</label>
-        </div>
+                <label for="spam">Subcribe to my newsletter</label>
+                <input type="checkbox" id="spam" name="spam" checked>
+            </div>
+            <div>
+                <label for="termsAndConditions">Accept terms and conditions</label>
+                <input required type="checkbox"  name="terms" id="termsAndConditions">   
+            </div>
         </fieldset>
+        
         <label for="bio">Add your bio</label>
-        <textarea requiered minLength="10" name="bio" id="bio" cols="30" rows="10"></textarea>
-        <br>
-        <select name="ciudad" id="ciudad"></select>
+        <textarea required minlength="10" name="bio" id="bio"></textarea>
+        <hr>
+        <select name="ciudad" id="ciudad">
             <option value="mad">Madrid</option>
             <option value="bcn">Barcelona</option>
             <option value="mal">Malaga</option>
-        <select> 
-        <br>
+        </select>
+        <hr>
         <div>
-            <label for="phone">phone</label> 
-            <input 
-            requiered 
-            type="tel" 
-            name="phone" 
-            id="phone" 
-            pattern="[0-9]+">
+            <label for="phone">phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="add phone" pattern="[0-9]+">
         </div>
-        <input type="submit" value="enviar">
-        <button type="submit">Registrar</button>
+        <hr>
 
         <input type="submit" value="Enviar">
         <button type="submit">registrar</button>
