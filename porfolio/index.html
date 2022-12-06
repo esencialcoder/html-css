@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+</head>
+<body>
+    <main class="main">
+        <header>
+            <!-- no se utiliza en la versión mobile -->
+            
+            <!-- <nav>
+                <ul>
+                    <li><a href="/porfolio/my works.html">my works</a></li>
+                    <li><a href="#section-2">section2</a></li>
+                    <li><a href="#section-3">section3</a></li>
+                </ul>
+            </nav> -->
+        
+            <h4>Juan Manuel</h4>
+            <img src="/porfolio/img/laptop-ge6a55b4d5_640.jpg" alt="">
+
+         </header>
+        <form 
+        action="registro-completado.html"
+        method="post"
+        
+         
+            >
+            <fieldset>
+                <legend>Contact</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input 
+                    required
+                    type="text"
+                    name="name"
+                    id="name"
+                    type="name"
+                    placeholder="add your name"> 
+                </div> 
+                <div>
+                    <label for="surmame">Surname</label>
+                    <input 
+                    required
+                    type="text"
+                    name="surname"
+                    id="surname"
+                    placeholder="add your surname">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input 
+                    required
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="add your phone"
+                    pattern="[0-9]+">
+                </div>
+            </fieldset>
+            <br>
+            
+            <fieldset>
+                <legend>How did you meet me?</legend>
+                
+                <label for="uni">College</label>
+                <input 
+                type="radio" 
+                id="uni" name="favLang" 
+                value="universidad">
+
+                <label for="kcg">Keepcoding-kick off</label>
+                <input 
+                type="radio" 
+                id="kcg" 
+                name="favLang" 
+                value="keepcoding-kick off">
+
+                <label for="colegio">School</label>
+                <input 
+                type="radio" 
+                id="colegio" 
+                name="favLang" 
+                value="colegio">
+
+                <label for="git">En Github</label>
+                <input 
+                type="radio" 
+                id="git" name="favLang" 
+                value="en Github">
+        </fieldset>
+            <br>
+
+            <fieldset>
+                <label for="github">Github</label>
+                <input 
+                required 
+                type="text" 
+                name="github" 
+                id="github"
+                maxlength="180" 
+                pattern="^@[^\s]+"
+                placeholder="add your @github profile"
+                >
+                <input type="button" value="save">
+            </fieldset>
+            <br>
+            <div>
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </main>
+    
+    <!-- aquí irán las redes sociales cuando comience con css-->
+    <footer class="footer">
+        <h5>Social networks</h5>
+        <ul>
+            <li>Github</li>
+            <li>linkedin</li>
+        </ul>
+    </footer>
+</body>
+</html>
