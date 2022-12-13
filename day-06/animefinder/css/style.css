@@ -1,0 +1,38 @@
+:root {
+    --main-color: #4C4AE6;
+}
+
+body {
+    font-size: 16px;
+}
+
+.footer {
+    background-color: var(--main-color);
+    color: #FFF;
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+    padding: 20px 0 20px 0;
+    padding: 20px;
+    padding-top: 40px;
+    /* border*/
+    border: 2px solid red;
+    
+}  
+
+
+
+.btn {
+    background-color: var(--main-color);
+
+}
+
+.navbar {
+    background-color: var(--main-color);
+
+}
+
+.primary {
+    background-color: var(--main-color);
+
+}
