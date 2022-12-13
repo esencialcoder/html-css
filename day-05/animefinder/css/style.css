@@ -18,7 +18,7 @@ body {
     /* Top - Right - Bottom -Left */
     padding: 20px 0 20px 0;
     /* Y (top / bottom) - X (Left / Right) */
-    padding 20px 0px;
+    padding: 20px 0px;
     /* All */
     padding: 20px;
     padding-top: 40px;
