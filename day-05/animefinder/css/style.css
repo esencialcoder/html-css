@@ -48,26 +48,61 @@ body {
 }
 
 .btn {
-    background-color: var(--main-color);
+    /*background-color: var(--main-color); */
 
 }
 
 #nombre {
     display: block;
-    display: inline-block;
+    display: inline-flex;
     
      
-}
-
-.navbar {
-    background-color: var(--main-color);
-
 }
 
 .primary {
     background-color: var(--main-color);
 
 }
+
+/* navbar */
+/*
+.navbar {
+    background-color: var(--main-color);
+    color: #FFF;
+
+}
+*/
+
+/*
+.navbar a.link {
+    display: none;
+}
+*/
+
+@media (min-width: 546px) {
+    /* CSS de ancho > 546px*/
+    .navbar a.link {
+        /*display: initial;*/
+        display: inline-block;
+        color: #FFF;
+    }
+}
+
+@media screen and (min-width: 746px) {
+    .navbar a.link{
+        display: inline-block;
+        color: red;
+        
+    }
+    footer {
+        display: none:
+    }
+}
+
+
+
+
+
 
 
 

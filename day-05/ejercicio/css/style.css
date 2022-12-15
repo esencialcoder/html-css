@@ -1,0 +1,40 @@
+:root {
+    --main-color: #4C4AE6;
+} 
+
+.navbar {
+    background-color: var(--main-color);
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.anime-finder {
+    
+    color: #FFF;
+    font-family: "Times New Roman";
+    font-size: 32px;
+    line-height: 35px;
+
+}
+
+.navbar .anime-finder {
+    padding: 20px 20px;
+}
+
+.navbar .logo {
+    padding: 20px 12px 12.92px;
+}
+
+.find, h2 {
+    color: #000;
+    font-family: "Times New Roman";
+    font-size: 32px; 
+    height: 35px;
+    display: flex;
+    justify-content: center;
+
+}
+    

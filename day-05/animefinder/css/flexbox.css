@@ -1,0 +1,63 @@
+.container {
+    background-color: blue;
+    height: 70vh;
+    display: flex;
+    /* justify-content: ;space between y space araund */
+    justify-content: space-evenly; /* Eje X */
+    align-items: center; /* Eje Y */
+    flex-wrap: wrap;
+    flex-direction: row;
+}   
+
+.item {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    
+}
+
+/*
+h1 {
+    border: 1px solid red;
+}
+
+ul {
+    border: 1px solid red;
+}
+*/  
+/*
+h1, ul {
+    border: 1px solid red;
+}
+*/
+
+/* navbar */
+.navbar {
+   background-color: var(--main-color);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+    
+}
+
+.navbar .list {
+    display: flex;
+}
+
+.navbar .list .list-item a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.navbar .list .list-item a, .navbar {
+    color: #FFF;
+    
+}
+
+
+
+
+
+
+
