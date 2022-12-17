@@ -106,7 +106,6 @@
             <fieldset>
                 <label for="github">Github</label>
                 <input 
-                required 
                 type="text" 
                 name="github" 
                 id="github"
@@ -114,8 +113,18 @@
                 pattern="^@[^\s]+"
                 placeholder="add your @github profile"
                 >
+                <br>
+                <label for="sobre tí">About you</label>
+                <input 
+                type="text"
+                maxlength="180"
+                placeholder="Max 180 charter"
+                >
+                <br>
+                <br>
                 <input type="button" value="save">
             </fieldset>
+            <br>
             <br>
             <div>
                 <input type="submit" value="Send">
