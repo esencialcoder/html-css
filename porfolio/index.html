@@ -35,11 +35,9 @@
         <form 
         action="registro-completado.html"
         method="post"
-        
-         
-            >
+        >
             <fieldset>
-                <legend>Contact</legend>
+                <legend>Contact form</legend>
                 <div>
                     <label for="name">Name</label>
                     <input 
@@ -69,69 +67,59 @@
                     placeholder="add your phone"
                     pattern="[0-9]+">
                 </div>
-            </fieldset>
-            <br>
-            
-            <fieldset>
+                <br>
                 <legend>How did you meet me?</legend>
-                
-                <label for="uni">College</label>
-                <input 
-                type="radio" 
-                id="uni" name="favLang" 
-                value="universidad">
-
-                <label for="kcg">Keepcoding-kick off</label>
-                <input 
-                type="radio" 
-                id="keepcoding" 
-                name="favLang" 
-                value="keepcoding-kick off">
-
-                <label for="colegio">School</label>
-                <input 
-                type="radio" 
-                id="colegio" 
-                name="favLang" 
-                value="colegio">
-
-                <label for="git">En Github</label>
-                <input 
-                type="radio" 
-                id="git" name="favLang" 
-                value="en Github">
-        </fieldset>
-            <br>
-
-            <fieldset>
-                <label for="github">Github</label>
-                <input 
-                type="text" 
-                name="github" 
-                id="github"
-                maxlength="180" 
-                pattern="^@[^\s]+"
-                placeholder="add your @github profile"
-                >
+                <div>
+                    <input 
+                    type="radio" 
+                    id="uni" name="favLang" 
+                    value="universidad">
+                    <label for="uni">College</label>
+                </div>
+                <div>
+                    <input 
+                    type="radio" 
+                    id="keepcoding" 
+                    name="favLang" 
+                    value="keepcoding-kick off">
+                    <label for="kcg">Keepcoding-kick off</label>
+                </div>
+                <div>
+                    <input 
+                    type="radio" 
+                    id="colegio" 
+                    name="favLang" 
+                    value="colegio">
+                    <label for="colegio">School</label>
+                </div>
+                <div>
+                    <input 
+                    type="radio" 
+                    id="git" name="favLang" 
+                    value="en Github">
+                    <label for="git">En Github</label>
+                </div>
                 <br>
-                <label for="sobre tí">About you</label>
-                <input 
-                type="text"
-                maxlength="180"
-                placeholder="Max 180 charter"
-                >
+                <div>
+                    <label for="github">Github</label>
+                    <input 
+                    type="text" 
+                    name="github" 
+                    id="github"
+                    pattern="^@[^\s]+"
+                    placeholder="@github user"
+                    >
+                </div>
+                <br>
+                <label for="bio">add your bio</label>
+                <br>
+                <textarea required maxlength="180" name="bio" id="bio" cols="30" rows="10"></textarea> 
                 <br>
                 <br>
-                <input type="button" value="save">
+                <input type="submit" value="send">
             </fieldset>
-            <br>
-            <br>
-            <div>
-                <input type="submit" value="Send">
-            </div>
-        </form>
         
-        
+        </form> 
     </main>
     
     <!-- aquí irán las redes sociales cuando comience con css-->
@@ -145,3 +133,8 @@
     </footer>
 </body>
 </html>
+
+                
+                
+        
+        
