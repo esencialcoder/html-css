@@ -20,7 +20,7 @@ h2 {
 }
 
 .carousel-slides {
-    height: 30vh;
+    height: 35vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -31,8 +31,7 @@ h2 {
 .carousel-slides div {
     height: 100%;
     width: 100%;
-    color: rgb(255, 255, 255);
-    background-color: rgb(68, 68, 68);
+    
 }   
     
 .carousel-slides .img {
@@ -40,3 +39,12 @@ h2 {
     justify-content: center;
 }
     
+/*@media (min-width: 768px) {
+    .carousel-container {
+        height: 150%;
+        width: 90%;
+    }
+} */ 
+
+    
+

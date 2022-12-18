@@ -1,4 +1,7 @@
 
+body {
+    background-color: rgb(249, 242, 242);
+}
 
 .navbar {
         display: flex;
@@ -15,9 +18,16 @@
 }
 
 .navbar .list .list-item a {
-    margin-left: 10px;
+    margin-left: 15px;
     text-decoration: none;
+   
 }
+
+.navbar .list .list-item a:hover {
+    font-size: 1.1rem;
+    transition: font-size 0.5s linear;
+}
+
 
 .my-works {
     display: flex;
@@ -26,13 +36,18 @@
 
 .form {
     padding: 10px 20px;
-}
+
+}   
 
 @media(min-width: 768px) {
     .navbar .list {
         opacity: 1;
     }
-}   
+}  
+
+
+
+
 
     
 
