@@ -1,0 +1,45 @@
+
+
+.navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+}
+
+
+.navbar .list {
+    display: flex;
+    opacity: 0;
+
+}
+
+.navbar .list .list-item a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.my-works {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    padding: 10px 20px;
+}
+
+@media(min-width: 768px) {
+    .navbar .list {
+        opacity: 1;
+    }
+}   
+
+    
+
+
+
+
+    
+    
+    
+

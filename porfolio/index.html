@@ -5,130 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
 </head>
 <body>
-    
-    <main class="main">
-        <header>
-            <!-- no se utiliza en la versión mobile -->
-            <!-- <nav>
-                <ul>
-                    <li><a href="/porfolio/my works.html">my works</a></li>
-                    <li><a href="#section-2">section2</a></li>
-                    <li><a href="#section-3">section3</a></li>
-                </ul>
-            </nav> -->
-        
-            <h4>Juan Manuel</h4>
-            <picture>
-                <source
-                media=""
-                srcset=""
+    <nav class="navbar">
+        <h4>Juan Manuel</h4>
+        <ul class="list">
+            <li class="list-item">
+                <a href="#works">Works</a>
+            </li>
+            <li class="list-item">
+                <a href="">Skills</a>
+            </li>
+            <li class="list-item">
+                <a href="">Contact</a>
+            </li>
+        </ul>
+    </nav> 
+    <header>
+        <picture>
+            <source 
+            media="(min-width:768px)"
+            srcset="images/laptop-1440.jpg">
+            <source media="(max-width: 768px)" 
+            srcset="images/laptop-320.jpg 320w, images/laptop-375.jpg 375w">
+            <img src="images/laptop-1920.jpg" alt="">
+        </picture>
+    </header>
+    <h2>My Works</h2>
+    <section id="works" class="carousel-container">
+        <div class="carousel-slides">
+            <div id="slide1">
+                <div class="img">
+                    <img src="images/wolf_320.jpg" alt="">
+                </div>
+            </div>
+            <div id="slide2">
+                <div class="img">
+                    <img src="images/sea_320.jpg" alt="">
+                </div>
+            </div>
+            <div id="slide3">
+                <div class="img">
+                    <img src="images/slide_320.jpg" alt="">
+                </div>
+            </div>
+            <div id="slide4">
+                <div class="img">
+                    <img src="images/snow_320.jpg" alt="">
+                </div>
+            </div>
+            <div id="slide5">
+                <div class="img">
+                    <img src="images/horses_320.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-links">
+            <a href="#slide1" class="carousel-dot"></a>
+            <a href="#slide2" class="carousel-dot"></a>
+            <a href="#slide3" class="carousel-dot"></a>
+            <a href="#slide4" class="carousel-dot"></a>
+            <a href="#slide5" class="carousel-dot"></a>
+        </div>
+    </section>
+    <form 
+    class="form"
+    action="registro-completado.html"
+    method="post"
+    >
+        <fieldset>
+            <legend>Contact form</legend>
+            <div>
+                <label for="name">Name</label>
+                <input 
+                required
+                type="text"
+                name="name"
+                id="name"
+                type="name"
+                placeholder="add your name"> 
+            </div> 
+            <div>
+                <label for="surmame">Surname</label>
+                <input 
+                required
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="add your surname">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input 
+                required
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="add your phone"
+                pattern="[0-9]+">
+            </div>
+            <br>
+            <legend>How did you meet me?</legend>
+            <div>
+                <input 
+                type="radio" 
+                id="uni" name="favLang" 
+                value="universidad">
+                <label for="uni">College</label>
+            </div>
+            <div>
+                <input 
+                type="radio" 
+                id="keepcoding" 
+                name="favLang" 
+                value="keepcoding-kick off">
+                <label for="kcg">Keepcoding-kick off</label>
+            </div>
+            <div>
+                <input 
+                type="radio" 
+                id="colegio" 
+                name="favLang" 
+                value="colegio">
+                <label for="colegio">School</label>
+            </div>
+            <div>
+                <input 
+                type="radio" 
+                id="git" name="favLang" 
+                value="en Github">
+                <label for="git">En Github</label>
+            </div>
+            <br>
+            <div>
+                <label for="github">Github</label>
+                <input 
+                type="text" 
+                name="github" 
+                id="github"
+                pattern="^@[^\s]+"
+                placeholder="@github user"
                 >
-
-            </picture>
-
-            
-
-        </header>
-        
-        <form 
-        action="registro-completado.html"
-        method="post"
-        >
-            <fieldset>
-                <legend>Contact form</legend>
-                <div>
-                    <label for="name">Name</label>
-                    <input 
-                    required
-                    type="text"
-                    name="name"
-                    id="name"
-                    type="name"
-                    placeholder="add your name"> 
-                </div> 
-                <div>
-                    <label for="surmame">Surname</label>
-                    <input 
-                    required
-                    type="text"
-                    name="surname"
-                    id="surname"
-                    placeholder="add your surname">
-                </div>
-                <div>
-                    <label for="phone">Phone</label>
-                    <input 
-                    required
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    placeholder="add your phone"
-                    pattern="[0-9]+">
-                </div>
-                <br>
-                <legend>How did you meet me?</legend>
-                <div>
-                    <input 
-                    type="radio" 
-                    id="uni" name="favLang" 
-                    value="universidad">
-                    <label for="uni">College</label>
-                </div>
-                <div>
-                    <input 
-                    type="radio" 
-                    id="keepcoding" 
-                    name="favLang" 
-                    value="keepcoding-kick off">
-                    <label for="kcg">Keepcoding-kick off</label>
-                </div>
-                <div>
-                    <input 
-                    type="radio" 
-                    id="colegio" 
-                    name="favLang" 
-                    value="colegio">
-                    <label for="colegio">School</label>
-                </div>
-                <div>
-                    <input 
-                    type="radio" 
-                    id="git" name="favLang" 
-                    value="en Github">
-                    <label for="git">En Github</label>
-                </div>
-                <br>
-                <div>
-                    <label for="github">Github</label>
-                    <input 
-                    type="text" 
-                    name="github" 
-                    id="github"
-                    pattern="^@[^\s]+"
-                    placeholder="@github user"
-                    >
-                </div>
-                <br>
-                <label for="bio">add your bio</label>
-                <br>
-                <textarea required maxlength="180" name="bio" id="bio" cols="30" rows="10"></textarea> 
-                <br>
-                <br>
-                <input type="submit" value="send">
-            </fieldset>
-        
-        </form> 
-    </main>
-    
-    <!-- aquí irán las redes sociales cuando comience con css-->
+            </div>
+            <br>
+            <label for="bio">add your bio</label>
+            <br>
+            <textarea required maxlength="180" name="bio" id="bio" cols="30" rows="10"></textarea> 
+            <br>
+            <br>
+            <input type="submit" value="send">
+        </fieldset>
+    </form> 
     <footer class="footer">
         <h5>Social networks</h5>
-        <ul>
-            <li>Github</li>
-            <li>linkedin</li>
-        </ul>
+        <div>
+            <img src="" alt="github">
+        </div>
+        <div>
+            <img src="" alt="linkedin">
+        </div>
+      
 
     </footer>
 </body>
