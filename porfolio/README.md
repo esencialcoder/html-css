@@ -35,4 +35,9 @@
 
 		- Iconos (librería externa).
 		- No se deja informacion, a través de los enlaces, a webs externas. 
+	### OPCIONAL ###
+	
+		- Creo página 404 y 500 como complemento. 
+	
+	### FIN ###
 

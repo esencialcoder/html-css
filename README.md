@@ -38,8 +38,8 @@ PARA LA PRÁCTICA HE UTILIZADO LAS SIGUIENTES TECNOLOGÍAS:
 		- No se deja informacion, a través de los enlaces, a webs externas. 				
 
 	### OPCIONAL ###
-
-		- Despliegue en Github pages.
+	
 		- Creo página 404 y 500 como complemento. 
 	
 	### FIN ###
+	
