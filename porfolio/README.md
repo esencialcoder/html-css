@@ -4,6 +4,8 @@
 
 	### WEB ###
 
+		- Utilizo el idioma Inglés para acostumbrarme a trabajos internacionales.
+		- Diseño Responsive.
 		- Compatible con los siguientes navegadores: Google Crome, Mozilla Firefox y Microsoft Edge.
 		- Para el diseño se utiliza únicamente HTML Y CSS.
 		- No se utiliza ningún tipo de librería externa. Únicamente se utiliza librería

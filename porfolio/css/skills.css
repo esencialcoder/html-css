@@ -1,0 +1,46 @@
+
+.contenedor-skills {
+    background-color: rgb(185, 182, 182);
+    box-sizing: border-box;
+    color: rgb(67, 63, 63);
+    margin: auto;
+    width: 320px;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}  
+
+.barra {
+    width: 200px;
+    height: 10px;
+    background-color: rgb(88, 79, 79);
+    border-radius: 10px;
+    
+}   
+
+h4 {
+    text-align: center;
+}
+
+.progreso {
+    width: var(--w);
+    height: 100%;
+    background-color: rgba(255,255,255,1);
+    border-radius: 10px;
+    animation: aumentar 5s ease
+}
+
+@keyframes aumentar {
+    0% {width: 0%;}
+    100% {width: var(--w);}
+}
+
+.progreso:hover {
+    animation: aumentar 5s ease;
+}
+
+
+
+
